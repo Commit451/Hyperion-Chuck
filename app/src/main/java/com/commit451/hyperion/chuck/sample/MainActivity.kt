@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val client = OkHttpClient.Builder()
-                .addInterceptor(ChuckInterceptor(applicationContext))
+                .addInterceptor(ChuckInterceptor(applicationContext).showNotification(false))
                 .build()
 
         buttonCreateTraffic.setOnClickListener {

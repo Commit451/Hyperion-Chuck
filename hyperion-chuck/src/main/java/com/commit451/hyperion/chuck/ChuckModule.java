@@ -11,20 +11,20 @@ import android.view.ViewGroup;
 import com.readystatesoftware.chuck.Chuck;
 import com.willowtreeapps.hyperion.plugin.v1.PluginModule;
 
-class ChuckModule extends PluginModule implements View.OnClickListener {
+class ChuckModule extends PluginModule {
 
     @Nullable
     @Override
     public View createPluginView(@NonNull LayoutInflater layoutInflater, @NonNull ViewGroup parent) {
         View view = layoutInflater.inflate(R.layout.hchuck_item_plugin, parent, false);
-        view.setOnClickListener(this);
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final Context context = v.getContext();
+                Intent intent = Chuck.getLaunchIntent(context);
+                context.startActivity(intent);
+            }
+        });
         return view;
-    }
-
-    @Override
-    public void onClick(View v) {
-        final Context context = v.getContext();
-        Intent intent = Chuck.getLaunchIntent(context);
-        context.startActivity(intent);
     }
 }
