@@ -25,6 +25,8 @@ android {
 }
 
 dependencies {
+    api 'com.android.support:appcompat-v7:27.1.0'
+    api 'com.android.support:design:27.1.0'
     api 'com.willowtreeapps.hyperion:hyperion-plugin:0.9.20'
     annotationProcessor "com.google.auto.service:auto-service:1.0-rc4"
     api 'com.readystatesoftware.chuck:library:1.1.0'

@@ -29,4 +29,7 @@ dependencies {
 
     debugImplementation 'com.willowtreeapps.hyperion:hyperion-core:0.9.20'
     debugImplementation project(':hyperion-chuck')
+
+    releaseImplementation 'com.willowtreeapps.hyperion:hyperion-core-no-op:0.9.20'
+    releaseImplementation 'com.readystatesoftware.chuck:library-no-op:1.1.0'
 }
