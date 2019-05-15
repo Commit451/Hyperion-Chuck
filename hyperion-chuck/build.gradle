@@ -1,15 +1,15 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 27
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
     }
 
@@ -25,9 +25,8 @@ android {
 }
 
 dependencies {
-    api 'com.android.support:appcompat-v7:27.1.0'
-    api 'com.android.support:design:27.1.0'
-    api 'com.willowtreeapps.hyperion:hyperion-plugin:0.9.20'
-    annotationProcessor "com.google.auto.service:auto-service:1.0-rc4"
+    api 'androidx.annotation:annotation:1.0.2'
+    api 'com.willowtreeapps.hyperion:hyperion-plugin:0.9.27'
+    annotationProcessor "com.google.auto.service:auto-service:1.0-rc5"
     api 'com.readystatesoftware.chuck:library:1.1.0'
 }

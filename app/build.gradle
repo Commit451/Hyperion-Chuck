@@ -5,14 +5,14 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
     defaultConfig {
         applicationId "com.commit451.hyperion.chuck.sample"
         minSdkVersion 16
-        targetSdkVersion 27
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -24,12 +24,12 @@ android {
 
 dependencies {
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'com.android.support:appcompat-v7:27.1.0'
-    implementation 'com.android.support:design:27.1.0'
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.google.android.material:material:1.0.0'
 
-    debugImplementation 'com.willowtreeapps.hyperion:hyperion-core:0.9.20'
+    debugImplementation 'com.willowtreeapps.hyperion:hyperion-core:0.9.27'
     debugImplementation project(':hyperion-chuck')
 
-    releaseImplementation 'com.willowtreeapps.hyperion:hyperion-core-no-op:0.9.20'
+    releaseImplementation 'com.willowtreeapps.hyperion:hyperion-core-no-op:0.9.27'
     releaseImplementation 'com.readystatesoftware.chuck:library-no-op:1.1.0'
 }

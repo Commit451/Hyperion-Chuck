@@ -1,7 +1,7 @@
 package com.commit451.hyperion.chuck.sample
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.readystatesoftware.chuck.ChuckInterceptor
 import com.willowtreeapps.hyperion.core.Hyperion
 import kotlinx.android.synthetic.main.activity_main.*
