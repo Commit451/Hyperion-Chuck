@@ -1,11 +1,11 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 30
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 28
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
@@ -25,8 +25,8 @@ android {
 }
 
 dependencies {
-    api 'androidx.annotation:annotation:1.0.2'
-    api 'com.willowtreeapps.hyperion:hyperion-plugin:0.9.27'
-    annotationProcessor "com.google.auto.service:auto-service:1.0-rc5"
+    api 'androidx.annotation:annotation:1.1.0'
+    api 'com.willowtreeapps.hyperion:hyperion-plugin:0.9.29'
+    annotationProcessor "com.google.auto.service:auto-service:1.0-rc7"
     api 'com.readystatesoftware.chuck:library:1.1.0'
 }
