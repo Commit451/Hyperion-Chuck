@@ -30,3 +30,5 @@ dependencies {
     annotationProcessor "com.google.auto.service:auto-service:1.0-rc7"
     api 'com.readystatesoftware.chuck:library:1.1.0'
 }
+
+apply from: 'https://raw.githubusercontent.com/Commit451/gradle-android-javadocs/1.0.0/gradle-android-javadocs.gradle'
